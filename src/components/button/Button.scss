@@ -5,10 +5,7 @@
     display: flex;
     justify-content:center;
     @include adaptive(gap, 6, 6);
-    @include adaptive(padding-left, 20);
-    @include adaptive(padding-right, 20);
-    @include adaptive(padding-top, 14);
-    @include adaptive(padding-bottom, 14);
+    @include padding(14, 20);
     @include adaptive(min-width, 218);
     &__text{
         @include text-button;

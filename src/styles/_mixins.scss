@@ -1,0 +1,24 @@
+@use 'variables' as *;
+
+@function to-vw($px, $design){
+    $vw: ($px / $design) * 100vw;
+    @return $vw;
+}
+
+@mixin mobile(){
+    @media (max-width: $breakpoint){
+        @content;
+    }
+}
+
+@mixin adaptive($property, $desk, $mob){
+    #{$property}: to-vw($desk, $desktop-design);
+    @if $mob != null{
+        @include mobile{
+            #{$property}: to-vw($mobile, $mobile-design)
+        }
+    }
+    @else{
+        #{$property}: to-vw($desk, $mobile-design);
+    }
+}

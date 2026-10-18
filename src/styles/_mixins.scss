@@ -22,3 +22,46 @@
         #{$property}: to-vw($desk, $mobile-design);
     }
 }
+
+
+@mixin text-h1{
+    font-family: HeaderFont;
+    @include adaptive(font-size, 72, 44);
+    @include adaptive(line-height, 76, 48);
+}
+@mixin text-h2{
+    font-family: HeaderFont;
+    @include adaptive(font-size, 48, 32);
+    @include adaptive(line-height, 52, 36);
+}
+@mixin text-card-title{
+    font-family: HeaderFont;
+    @include adaptive(font-size, 28, 28);
+    @include adaptive(line-height, 32, 32);
+}
+@mixin text-body{
+    color: $color-muted;
+    @include adaptive(font-size, 16, 16);
+    @include adaptive(line-height, 26, 26);
+}
+@mixin text-small{
+    @include adaptive(font-size, 14, 14);
+    @include adaptive(line-height, 22, 22);
+}
+@mixin text-label{
+    color: $color-muted;
+    @include adaptive(font-size, 12, 12);
+    @include adaptive(line-height, 18, 18);
+    text-transform: uppercase;
+}
+
+@mixin text-wordmark{
+    @include adaptive(font-size, 32, 32);
+    @include adaptive(line-height, 36, 36);
+}
+
+@mixin text-button{
+    color: $color-white;
+    @include adaptive(font-size, 14, 14);
+    @include adaptive(line-height, 20, 20);
+}

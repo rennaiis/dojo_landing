@@ -1,0 +1,25 @@
+@use '../../styles' as *;
+
+.button{
+    background-color: $color-accent;
+    display: flex;
+    justify-content:center;
+    @include adaptive(gap, 6, 6);
+    @include adaptive(padding-left, 20);
+    @include adaptive(padding-right, 20);
+    @include adaptive(padding-top, 14);
+    @include adaptive(padding-bottom, 14);
+    @include adaptive(min-width, 218);
+    &__text{
+        @include text-button;
+    }
+    &__icon{
+        @include adaptive(width, 11, 11)
+    }
+    &:hover{
+        background-color: $color-ink;
+    }
+    @include mobile{
+        width: 100%;
+    }
+}

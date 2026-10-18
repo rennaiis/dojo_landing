@@ -4,6 +4,7 @@
     background-color: $color-accent;
     display: flex;
     justify-content:center;
+    align-items: center;
     @include adaptive(gap, 6, 6);
     @include padding(14, 20);
     @include adaptive(min-width, 218);

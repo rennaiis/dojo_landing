@@ -2,6 +2,8 @@ const MOB = 390;
 
 export const header = {
     companyName: 'Додзё Медиа',
+    menuButton: 'icons/menu.svg',
+    closeButton: 'icons/close.svg',
     links: [
         {
             text: 'Проекты',
@@ -20,7 +22,7 @@ export const header = {
         text: 'Обсудить проект', 
         icon: 'icons/arrow-white.svg', 
         href: ''
-    }, 
+    },
 }
 export const intro = {
     tags: ['Сайты', 'Поиск', 'Смысл'],

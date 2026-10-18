@@ -9,20 +9,81 @@
         border-bottom: 1px solid;
         border-color: $color-line;
         @include adaptive(border-width, 1);
+        @include mobile{
+            flex-direction: column;
+            border-width: 0px;
+            padding-bottom: 0;
+        }
     }
     &__wordmark{
         @include text-wordmark;
         display: flex;
         align-items: center;
     }
+    &__container{
+        display: flex;
+        justify-content: space-between;
+        @include mobile{
+            @include padding(0,0, 24, 0);
+            border-bottom: 1px solid;
+            border-color: $color-line;
+            @include adaptive(border-width, 1);
+        }
+    }
     &__links{
         display: flex;
         @include adaptive(gap, 32);
         @include adaptive(min-width, 304);
+        @include mobile{
+            flex-direction: column;
+            opacity: 0;
+            height: 0;
+            gap: 0;
+        };
+        &_open{
+            opacity: 1;
+            height: auto;
+        }
+    }
+    &__button{
+        @include mobile{
+            opacity: 0;
+            height: 0;
+            &_open{
+                opacity: 1;
+                height: auto;
+            }
+        }
     }
     &__link{
         @include text-small;
         display: flex;
         align-items: center;
+        @include mobile{
+            @include adaptive(padding, 12)
+        }
+    }
+    &__iconContainer{
+        display: none;
+        @include mobile{
+            display: flex;
+            align-items: center;
+            @include padding(12);
+            border-style: solid;
+            border-color: $color-line;
+            @include adaptive(border-width, 1);
+        }
+        
+
+    }
+    &__menu{
+        @include adaptive(width, 18); 
+    }
+    &__close{
+        display: none;
+        @include mobile{
+            display: block;
+            @include adaptive(width, 12)
+        }
     }
 }

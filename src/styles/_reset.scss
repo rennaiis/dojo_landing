@@ -20,8 +20,10 @@ body{
 
 /* Links */
 
-a, a:link, a:visited  {
+a, a:link, a:visited, a:hover, a:active, a:focus {
     text-decoration: none;
+    color: inherit;
+    
 }
 
 a:hover  {

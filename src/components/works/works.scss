@@ -6,8 +6,11 @@
         display: flex;
         flex-direction: column;
         @include padding(46, 0, 64, 0);
-        @include adaptive(gap, 32);
+        @include adaptive(gap, 32, 24);
         @include underline;
+        @include mobile{
+            @include padding(38, 0, 48, 0);
+        }
     }
     &__title{
         @include text-h2;
@@ -15,6 +18,9 @@
     &__caption{
         @include text-label;
         align-self: flex-end;
+        @include mobile{
+            align-self: flex-start;
+        }
     }
     &__card-title{
         @include text-card-title;
@@ -31,11 +37,18 @@
     &__header{
         display: flex;
         justify-content: space-between;
+        @include mobile{
+            flex-direction: column;
+            @include adaptive (gap, 9)
+        }
     }
     &__projects{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        @include adaptive(gap, 24);
+        @include adaptive(gap, 24, 16);
+        @include mobile{
+            grid-template-columns: 1fr;
+        }
     }
     &__project{
         display: flex;

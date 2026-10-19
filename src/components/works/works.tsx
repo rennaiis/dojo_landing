@@ -25,7 +25,7 @@ export default function Works(){
                             </ul>
                             <a className='works__link' href={item.link.href}>
                                 <span>{item.link.text}</span>
-                                <img className='works__link-icon' src={item.link.arrow}/>
+                                <img className='works__link-icon' src={item.link.icon}/>
                             </a>
                         </li>
                     ))}

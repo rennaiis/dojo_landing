@@ -23,8 +23,26 @@
         align-items: center;
         @include adaptive(gap, 5);
         @include text-small;
+        &:focus-visible{
+            outline: none;
+            font-weight: 900;
+        }
+    }
+    &:hover{
+        background-color: $color-hover;
+    }
+    &:focus-visible{
+        outline-style: solid;
+        @include adaptive(outline-width, 2);
+        @include adaptive(outline-offset, 3)
     }
     &__link-icon{
         @include adaptive(width, 11);
+    }
+    &__picture{
+        img{
+            width: 100%;
+        }
+        
     }
 }

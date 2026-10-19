@@ -1,4 +1,4 @@
-const MOB = 390;
+const MOB = 728;
 
 export const header = {
     companyName: 'Додзё Медиа',

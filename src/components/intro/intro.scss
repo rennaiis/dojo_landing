@@ -5,7 +5,7 @@
     &__content{
         display: flex;
         flex-direction: column;
-        @include adaptive(gap, 24, 24);
+        @include adaptive(gap, 24, 20);
         @include padding(48, 0, 64, 0);
         @include mobile{
             @include padding(32, 0, 40, 0);
@@ -36,21 +36,35 @@
             'title .'
             'title text'
             'title caption';
+        @include mobile{
+            grid-template-columns: 1fr;
+            grid-template-areas: 
+                'title'
+                'text'
+                'caption'
+        }
     }
     &__title{
-        @include text-h1;
-        
+        @include text-h1; 
     }
     &__text{
         justify-self: start;
         @include text-body;
         grid-area: text;
         align-items: start;
-        @include adaptive(padding-bottom, 17)
+        @include adaptive(padding-bottom, 17);
+        @include mobile{
+            @include adaptive(padding-top, 19);
+        }
     }
     &__caption{
         justify-self: start;
         @include text-label;
         grid-area: caption;
+    }
+    &__picture{
+        img{
+            width: 100%;
+        }
     }
 }

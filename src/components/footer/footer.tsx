@@ -4,7 +4,7 @@ import './footer.scss'
 
 export default function Footer(){
     return(
-        <section className='footer'>
+        <section className='footer' id='footer'>
             <div className='footer__bg'></div>
             <div className='footer__content'>
                 <div className='footer__container'>

@@ -4,7 +4,7 @@ import './works.scss'
 
 export default function Works(){
     return(
-        <section className='works'>
+        <section className='works' id='works'>
             <div className='works__bg'></div>
             <div className='works__content'>
                 <div className='works__header'>

@@ -4,7 +4,7 @@ import './intro.scss'
 
 export default function Intro(){
     return(
-        <section className='intro'>
+        <section className='intro' id='intro'>
             <div className='intro__bg'></div>
             <div className='intro__content'>
                 <ul className='intro__tags'>

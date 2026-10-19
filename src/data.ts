@@ -7,15 +7,15 @@ export const header = {
     links: [
         {
             text: 'Проекты',
-            href: ''
+            href: '#works'
         },
         {
             text: 'Подход',
-            href: ''
+            href: '#intro'
         },
         {
             text: 'Контакты',
-            href: ''
+            href: '#footer'
         }
     ],
     button: {

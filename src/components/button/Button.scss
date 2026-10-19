@@ -8,6 +8,7 @@
     @include adaptive(gap, 6, 6);
     @include padding(14, 20);
     @include adaptive(min-width, 218);
+    transition: background-color 0.3s ease;
     &__text{
         @include text-button;
     }

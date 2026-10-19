@@ -9,7 +9,8 @@
         @include padding(48, 0, 64, 0);
         @include mobile{
             @include padding(32, 0, 40, 0);
-        }
+        };
+        @include underline;
     }
     &__tags{
         display: flex;

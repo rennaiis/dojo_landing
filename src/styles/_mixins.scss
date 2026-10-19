@@ -91,3 +91,8 @@
     }
 
 }
+@mixin underline{
+    border-bottom: 1px solid;
+    border-color: $color-line;
+    @include adaptive(border-width, 1);
+}

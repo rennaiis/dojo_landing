@@ -45,7 +45,7 @@
     &__projects{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        @include adaptive(gap, 24, 16);
+        @include adaptive(gap, 24, 15);
         @include mobile{
             grid-template-columns: 1fr;
         }

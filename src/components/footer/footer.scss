@@ -18,11 +18,20 @@
         grid-template-areas: 
             'title button'
             'caption button';
-         @include adaptive(gap, 11)
+        @include adaptive(gap, 11, 0);
+        @include mobile{
+            grid-template-columns: 1fr;
+            grid-template-areas: 
+                'title'
+                'caption'
+                'button';
+        }
+
     }
     &__title{
         grid-area: title;
         @include text-h2;
+        @include adaptive(margin-bottom, 0, 11);
     }
     &__email{
         grid-area: caption;
@@ -39,5 +48,8 @@
     &__marks{
         display: flex;
         justify-content: space-between;
+        @include mobile{
+            flex-direction: column;
+        }
     }
 }

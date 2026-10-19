@@ -36,6 +36,7 @@
 }
 @mixin text-card-title{
     font-family: HeaderFont;
+    text-transform: uppercase;
     @include adaptive(font-size, 28, 28);
     @include adaptive(line-height, 32, 32);
 }
@@ -95,4 +96,15 @@
     border-bottom: 1px solid;
     border-color: $color-line;
     @include adaptive(border-width, 1);
+}
+
+@mixin dots($gap){
+    display: flex;
+    align-items:center;
+    &:not(:last-child)::after{
+        content: '·';
+        @include adaptive(width, $gap);
+        display: inline-flex;
+        justify-content: center;
+    }
 }

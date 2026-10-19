@@ -82,7 +82,7 @@ export const works = {
             tags: ['Сайт', 'Брендинг', 'Реклама'], 
             link: {
                 text: 'Смотреть проект',
-                arrow: 'icons/arrow-white', 
+                arrow: 'icons/arrow-black.svg', 
                 href: ''
             }
         },
@@ -111,7 +111,7 @@ export const works = {
             tags: ['Сайт','Стратегия','Реклама'], 
             link: {
                 text: 'Смотреть проект',
-                arrow: 'icons/arrow-white', 
+                arrow: 'icons/arrow-black.svg', 
                 href: ''
             }
         },
@@ -140,7 +140,7 @@ export const works = {
             tags: ['Сайт','Брендинг','Стратегия'], 
             link: {
                 text: 'Смотреть проект',
-                arrow: 'icons/arrow-white', 
+                arrow: 'icons/arrow-black.svg', 
                 href: ''
             }
         },

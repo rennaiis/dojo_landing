@@ -1,0 +1,56 @@
+@use '../../styles' as *;
+
+.intro{
+    @include content;
+    &__content{
+        display: flex;
+        flex-direction: column;
+        @include adaptive(gap, 24, 24);
+        @include padding(48, 0, 64, 0);
+        @include mobile{
+            @include padding(32, 0, 40, 0);
+        }
+    }
+    &__tags{
+        display: flex;
+        align-items: center;
+    }
+    &__tag{
+        display: flex;
+        align-items:center;
+        @include text-label;
+        &:not(:last-child)::after{
+            content: '·';
+            @include adaptive(width, 11);
+            display: inline-flex;
+            justify-content: center;
+        }
+    }
+    &__titleContainer{
+        grid-area: title;
+    }
+    &__container{
+        display: grid;
+        grid-template-columns: 2fr 0.94fr;
+        grid-template-areas:
+            'title .'
+            'title text'
+            'title caption';
+    }
+    &__title{
+        @include text-h1;
+        
+    }
+    &__text{
+        justify-self: start;
+        @include text-body;
+        grid-area: text;
+        align-items: start;
+        @include adaptive(padding-bottom, 17)
+    }
+    &__caption{
+        justify-self: start;
+        @include text-label;
+        grid-area: caption;
+    }
+}

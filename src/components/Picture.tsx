@@ -5,7 +5,7 @@ interface Source {
 }
 
 interface PictureProps {
-    className: string;
+    className?: string;
     sources: Source[],
     imgAttr: {
         src: string;

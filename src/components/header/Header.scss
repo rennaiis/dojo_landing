@@ -57,8 +57,13 @@
         @include text-small;
         display: flex;
         align-items: center;
+
         @include mobile{
             @include adaptive(padding, 12)
+        }
+        &:focus-visible{
+            outline: none;
+            font-weight: 900;
         }
     }
     &__iconContainer{

@@ -1,0 +1,43 @@
+@use '../../styles' as *;
+
+.footer{
+    @include content;
+    &__content{
+        display: flex;
+        flex-direction: column;
+        @include padding(48, 0, 24, 0);
+        @include mobile{
+            @include padding(32, 0, 24, 0);
+        }
+        @include adaptive(gap, 24)
+        
+    }
+    &__container{
+        display: grid;
+        grid-template-columns: 5fr 1fr;
+        grid-template-areas: 
+            'title button'
+            'caption button';
+         @include adaptive(gap, 11)
+    }
+    &__title{
+        grid-area: title;
+        @include text-h2;
+    }
+    &__email{
+        grid-area: caption;
+
+    }
+    &__button{
+        grid-area: button;
+        align-self: center;
+    }
+    &__email, &__caption{
+        @include text-small;
+        color: $color-muted;
+    }
+    &__marks{
+        display: flex;
+        justify-content: space-between;
+    }
+}

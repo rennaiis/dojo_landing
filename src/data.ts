@@ -150,10 +150,11 @@ export const works = {
 export const footer = {
     title: 'Начнём с вашей идеи.', 
     email: 'hello@dojo-media.com', 
-    caption: '© 2026 Додзё Медиа', 
+    mark: '© 2026 Додзё Медиа', 
+    caption: 'Мастерство начинается с деталей.',
     button: {
         text: 'Обсудить проект', 
-        icon: 'icons/arrow-black', 
+        icon: 'icons/arrow-white.svg', 
         href: '/'
     }
 }

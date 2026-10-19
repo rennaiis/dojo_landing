@@ -1,3 +1,4 @@
+import Footer from './components/footer/footer'
 import Header from './components/header/Header'
 import Intro from './components/intro/intro'
 import Works from './components/works/works'
@@ -9,6 +10,7 @@ function App() {
       <Header/>
       <Intro/>
       <Works/>
+      <Footer/>
     </>
   )
 }

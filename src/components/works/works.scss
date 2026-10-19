@@ -22,18 +22,7 @@
             align-self: flex-start;
         }
     }
-    &__card-title{
-        @include text-card-title;
-    }
-    &__tags{
-        display: flex;
-
-    }
-    &__tag{
-        @include text-small;
-        color: $color-muted;
-        @include dots(8)
-    }
+    
     &__header{
         display: flex;
         justify-content: space-between;
@@ -50,23 +39,6 @@
             grid-template-columns: 1fr;
         }
     }
-    &__project{
-        display: flex;
-        flex-direction: column;
-        @include adaptive(gap, 12);
-        @include padding(15);
-        border-style: solid;
-        border-color: $color-line;
-        @include adaptive(border-width, 1);
-    }
-    &__link{
-        display: flex;
-        align-items: center;
-        @include adaptive(gap, 5);
-        @include text-small;
-    }
-    &__link-icon{
-        @include adaptive(width, 11);
-    }
+    
 
 }

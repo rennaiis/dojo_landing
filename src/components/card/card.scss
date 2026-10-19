@@ -1,0 +1,30 @@
+@use '../../styles' as *;
+.card{
+    display: flex;
+    flex-direction: column;
+    @include adaptive(gap, 12);
+    @include padding(15);
+    border-style: solid;
+    border-color: $color-line;
+    @include adaptive(border-width, 1);
+    &__title{
+        @include text-card-title;
+    }
+    &__tags{
+        display: flex;
+    }
+    &__tag{
+        @include text-small;
+        color: $color-muted;
+        @include dots(8)
+    }
+    &__link{
+        display: flex;
+        align-items: center;
+        @include adaptive(gap, 5);
+        @include text-small;
+    }
+    &__link-icon{
+        @include adaptive(width, 11);
+    }
+}

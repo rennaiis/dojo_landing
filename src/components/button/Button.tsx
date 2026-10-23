@@ -1,5 +1,5 @@
 import type { ButtonProps } from '../propsTypes';
-import './button.scss';
+import './Button.scss';
 
 export default function Button(buttonProps: ButtonProps){
     const {text, icon, href} = buttonProps

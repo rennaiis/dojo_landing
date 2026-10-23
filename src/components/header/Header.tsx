@@ -2,7 +2,7 @@
 import { useState } from 'react'
 import { header } from '../../data'
 import Button from '../button/Button'
-import './header.scss'
+import './Header.scss'
 export default function Header(){
     const [isOpen, setIsOpen] = useState(false)
     return(
